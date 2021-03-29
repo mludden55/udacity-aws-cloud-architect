@@ -1,0 +1,19 @@
+Group hierarchy,Region,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),Amazon Virtual Private Cloud (VPC),0,2028.11,24337.32,USD,"DT Inbound: Internet (1 TB per month), DT Outbound: Internet (5 TB per month), DT Intra-Region: (5 TB per month), Working days per month (22), Number of Site-to-Site VPN Connections (2), Number of subnet associations (4)"
+My Estimate,US East (Ohio),Amazon Virtual Private Cloud (VPC),0,66.6,799.2,USD,Number of NAT Gateways (1)
+My Estimate,US East (Ohio),Amazon RDS for MySQL,0,2090,25080,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (100 GB), Quantity (2), Instance type (db.m4.2xlarge), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+My Estimate,US East (Ohio),Amazon EC2,0,290.52,3486.24,USD,"Operating system (Linux), Quantity (2), Pricing strategy (EC2 Instance Savings Plans 1 Year No UpFront), Storage amount (1000 GB), Instance type (m4.large)"
+My Estimate,US East (Ohio),Application Load Balancer,0,79.57,954.84,USD,Number of Application Load Balancers (2)
+My Estimate,US East (Ohio),S3 Standard,0,25.75,309,USD,S3 Standard storage (1000 GB per month)
+My Estimate,US East (Ohio),Data Transfer,0,0,0,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month)"
+My Estimate,US East (Ohio),Amazon EC2,0,283.95,3407.4,USD,"Operating system (Linux), Quantity (2), Pricing strategy (EC2 Instance Savings Plans 1 Year No UpFront), Storage amount (1000 GB), Instance type (t2.large)"
+My Estimate,US East (Ohio),Amazon ElastiCache,0,996.45,11957.4,USD,( 3 instances of type Memcached  Memory optimized  cache r4.xlarge  OnDemand )
+,,,,5860.95,70331.4,,
+,,,,,,,
+,,,,,,,
+Acknowledgement,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,
+,,,,,,,
+Modification from Original Estimate:,,,,,,,
+1. Reduced the Elasticache performance from r4.2xlarge to r5.large,,,,,,,
+2. Dowgraded RDS MySql from db.m4.4xlarge to db.m4.2xlarge,,,,,,,

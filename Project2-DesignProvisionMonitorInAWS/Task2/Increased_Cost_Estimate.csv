@@ -1,0 +1,23 @@
+Group hierarchy,Region,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),Amazon Virtual Private Cloud (VPC),0,2028.11,24337.32,USD,"DT Inbound: Internet (1 TB per month), DT Outbound: Internet (5 TB per month), DT Intra-Region: (5 TB per month), Working days per month (22), Number of Site-to-Site VPN Connections (2), Number of subnet associations (4)"
+My Estimate,US East (Ohio),Amazon Virtual Private Cloud (VPC),0,66.6,799.2,USD,Number of NAT Gateways (1)
+My Estimate,US East (Ohio),Amazon RDS for MySQL,0,10271.84,123262.08,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (100 GB), Quantity (2), Instance type (db.m4.10xlarge), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+My Estimate,US East (Ohio),Amazon EC2,0,380.89,4570.68,USD,"Operating system (Linux), Quantity (2), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (1000 GB), Instance type (m4.xlarge)"
+My Estimate,US East (Ohio),Application Load Balancer,0,79.57,954.84,USD,Number of Application Load Balancers (2)
+My Estimate,US East (Ohio),S3 Standard,0,25.75,309,USD,S3 Standard storage (1000 GB per month)
+My Estimate,US East (Ohio),Data Transfer,0,0,0,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month)"
+My Estimate,US East (Ohio),Amazon EC2,0,367.9,4414.8,USD,"Operating system (Linux), Quantity (2), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (1000 GB), Instance type (t2.xlarge)"
+My Estimate,US East (Ohio),Amazon ElastiCache,0,3985.8,47829.6,USD,( 3 instances of type Memcached  Memory optimized  cache r4.4xlarge  OnDemand )
+Global,All,AWS Support,0,1504.45,18053.4,USD,"Supports 24/7 phone, chat, and email access to Cloud Support Engineers for unlimited contacts, with and a response time of less than 1 hour."
+,,,,18710.91,224530.92,,
+,,,,,,,
+,,,,,,,
+Acknowledgement,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,
+,,,,,,,
+Modification from Original Estimate:,,,,,,,
+1. Increased the Elasticache performance from r4.2xlarge to r4.4xlarge,,,,,,,
+2. Added AWS Business Support Plan,,,,,,,
+3. Upgraded RDS MySql from db.m4.4xlarge db.m4.10xlarge,,,,,,,
+4. Changed EC2 web servers from t2.large to t2.xlarge,,,,,,,
+5. Changed EC2 application servers from m4.large to m4.xlarge,,,,,,,

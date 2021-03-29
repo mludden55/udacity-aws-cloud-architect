@@ -1,0 +1,41 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Program Files\MySQL\MySQL Server 8.0\bin> ssh -i udacity-secondary.pem ec2-user@ec2-54-188-208-147.us-west-2.compute.amazonaws.com
+Last login: Tue Feb  2 01:16:13 2021 from 174-29-62-143.hlrn.qwest.net
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+[ec2-user@ip-10-2-10-33 ~]$ mysql -h database-1-readreplica.ckwrh7o9ezrl.us-west-2.rds.amazonaws.com -P 3306 -u admin -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 12
+Server version: 8.0.20 Source distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [(none)]> use udacity
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MySQL [udacity]> insert into users(id, username, password) values (4,'mluddenNew', 'password');
+ERROR 1290 (HY000): The MySQL server is running with the --read-only option so it cannot execute this statement
+MySQL [udacity]> select * from users;
++----+----------+--------------+
+| id | username | password     |
++----+----------+--------------+
+|  1 | mludden  | passwordTest |
+|  2 | jdoe     | badPassword  |
+|  3 | sometest | newPassword  |
++----+----------+--------------+
+3 rows in set (0.00 sec)
+
+MySQL [udacity]>

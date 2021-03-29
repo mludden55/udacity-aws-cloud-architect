@@ -1,0 +1,20 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+Chef inspec, Open policy agent/Regula, Terrascan
+
+### Example vulnerability
+Ingress open to 0.0.0.0/0
+
+##Scan AMI’s or containers for OS vulnerabilities
+Clair, AT&T AWS vulnerability scanning (USM Anywhere)
+
+### Example vulnerability
+SSH root access with logon
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+AWS Config, Intruder (https://www.intruder.io/)
+
+### Example vulnerability
+EC2 instance hijacked
+

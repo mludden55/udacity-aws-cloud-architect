@@ -1,0 +1,35 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+
+AWS Inspector
+TCP port 21 which is associated with 'FTP' is reachable from the internet
+UDP port 21 which is associated with 'FTP' is reachable from the internet
+TCP port 20 which is associated with 'FTP' is reachable from the internet
+UDP port 20 which is associated with 'FTP' is reachable from the internet
+TCP port 23 which is associated with 'Telnet' is reachable from the internet
+UDP port 23 which is associated with 'Telnet' is reachable from the internet
+
+TCP port 546 which is associated with 'DHCP' is reachable from the internet
+TCP port 68 which is associated with 'DHCP' is reachable from the internet
+TCP port 547 which is associated with 'DHCP' is reachable from the internet
+TCP port 67 which is associated with 'DHCP' is reachable from the internet
+
+AWS Security Hub
+1.9 	Ensure IAM password policy requires minimum password length of 14 or greater
+1.11 	Ensure IAM password policy expires passwords within 90 days or less
+2.9		Ensure VPC flow logging is enabled in all VPCs
+2.6 	Ensure S3 bucket access logging is enabled on the CloudTrail S3 bucket
+4.1		Ensure no security groups allow ingress from 0.0.0.0/0 to port 22
+4.2		Ensure no security groups allow ingress from 0.0.0.0/0 to port 3389
+S3.4 	S3 buckets should have server-side encryption enabled
+EC2.9 	EC2 instances should not have a public IPv4 address
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+
+Remove public access for ports 20,21,23,67,68,546,547
+Specify a more rigorous IAM password policy
+Enable VPC flow logging
+Enable access logging on CloudTrail S3 bucket
+Provide specific IP address range for security groups ingress on port 22
+Provide specific IP address range for security groups ingress on port 3389
+Encrypt S3 buckets
+Remove public access for EC2 instances

@@ -1,0 +1,11 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+The c3-app-InstanceRole-18IBL9L5R85Q3 for the IAM Role allows for S3 actions on any resource.
+
+This means that the IAM role could be used to access and change content in any S3 bucket in the AWS account.
+
+# Poor practice 2
+For the VPC configuration, all of the route definitions have DestinationCidrBlock defined as 0.0.0.0/0.
+
+If an attacker was able to breach into the subnet configured within the routing table they could have the option to tranfer information to any IP address within the VPC.
