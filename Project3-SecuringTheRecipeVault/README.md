@@ -160,7 +160,7 @@ Based on the architecture diagram, and the steps you have taken so far to upload
 **Deliverables:** 
 - **E1T4.txt** - Text file identifying 2 poor security practices with justification. 
 
-[Answer](Exercise_1/E1T4.txt)
+[Answer](Exercise1/E1T4.txt)
  
 ## Exercise 2: Enable Security Monitoring
  
@@ -210,14 +210,14 @@ Research and analyze which of the vulnerabilities appear to be related to the co
  
 **Deliverables:** 
 - **E2T2_config.png** - Screenshot of AWS Config showing non-compliant rules.
-[AWS Config](Excercise2/E2T2_config.png)
+[AWS Config](Exercise2/E2T2_config.png)
 
 - **E2T2_inspector.png** - Screenshot of AWS Inspector showing scan results.
-[Inspector](Excercise2/E2T2_inspector.png)
+[Inspector](Exercise2/E2T2_inspector.png)
 - **E2T2.png_securityhub.png** - Screenshot of AWS Security Hub showing compliance standards for CIS foundations.
-[Security Hub](Excercise2/E2T2_securityhub.png)
+[Security Hub](Exercise2/E2T2_securityhub.png)
 - **E2T2.txt** - Provide recommendations on how to remediate the vulnerabilities.
-[Recommendations](Excercise2/E2T2.txt)
+[Recommendations](Exercise2/E2T2.txt)
  
 ## Exercise 3 - Attack Simulation
  
@@ -260,9 +260,9 @@ Submit text answers in E3T1.txt.
  
 **Deliverables:**
 - **E3T1_guardduty.png** - Screenshot of Guard Duty findings specific to the Exercise 3, Task 1 attack.
-[Guard Duty](Excercise3/E3T1_guardduty.png)
+[Guard Duty](Exercise3/E3T1_guardduty.png)
 - **E3T1.txt** - Answer to the questions at the end of Exercise 3, Task 1.
-[Answer](Excercise3/E3T1.txt)
+[Answer](Exercise3/E3T1.txt)
  
 ### Task 2: Accessing Secret Recipe Data File from S3
  
@@ -282,7 +282,7 @@ cat secret_recipe.txt
 ```
 Take a screenshot showing the breach:
 E3T2_s3breach.png
-[Breach](Excercise3/E3T2_s3breach.png)
+[Breach](Exercise3/E3T2_s3breach.png)
 
 _Optional Stand Out Suggestion_ Task 3:
 Choose one of the application vulnerability attacks outlined in the OWASP top 10 (e.g. SQL injection, cross-site scripting)
@@ -323,7 +323,7 @@ Submit answer in E4T1.txt
 
 **Deliverables:**
 - **E4T1.txt** - Answer to the prompts in Exercise 4, Task 1.
-[Answer](Excercise4/E4T1.txt)
+[Answer](Exercise4/E4T1.txt)
 
 ### Task 2 - Hardening
 
@@ -352,7 +352,7 @@ sudo service ssh restart
 
 **Deliverables:**
 - **E4T2_sshbruteforce.png** - Screenshot of terminal window showing the brute force attack and the remediation.
-[Brute Force](Excercise4/E4T2_sshbruteforce.png)
+[Brute Force](Exercise4/E4T2_sshbruteforce.png)
 
 #### Apply Network Controls to Restrict Application Server Traffic
 
@@ -362,9 +362,9 @@ sudo service ssh restart
 
 **Deliverables**:
 - **E4T2_networksg.png** - Screenshot of the security group change. 
-[Security Groups](Excercise4/E4T2_networksg.png)
+[Security Groups](Exercise4/E4T2_networksg.png)
 - **E4T2_sshattempt.png** - Screenshot of your SSH attempt.
-[SSH Attempt](Excercise4/E4T2_sshattempt.png)
+[SSH Attempt](Exercise4/E4T2_sshattempt.png)
 #### Least Privilege Access to S3  
 
 1. Update the IAM policy for the instance profile role used by the web application instance to only allow read access to the free recipes S3 bucket.
@@ -373,9 +373,9 @@ sudo service ssh restart
 
 **Deliverables:**
 - **E4T2_s3iampolicy.png** - Screenshot of the updated IAM policy.
-[IAM Policy](Excercise4/E4T2_s3iampolicy.png)
+[IAM Policy](Exercise4/E4T2_s3iampolicy.png)
 - **E4T2_s3copy.png** - Screenshot of the failed copy attempt.
-[Failed Copy Attempt](Excercise4/E4T2_s3copy.png)
+[Failed Copy Attempt](Exercise4/E4T2_s3copy.png)
 #### Apply Default Server-side Encryption to the S3 Bucket
 
 This will cause the S3 service to encrypt any objects that are stored going forward by default.
@@ -386,7 +386,7 @@ Capture the screenshot of the secret recipes bucket showing that default encrypt
 
 **Deliverables**:
 - **E4T2_s3encryption.png** - Screenshot of the S3 bucket policy.
-[S3 Bucket Policy](Excercise4/E4T2_s3encryption.png)
+[S3 Bucket Policy](Exercise4/E4T2_s3encryption.png)
 ### Task 3: Check Monitoring Tools to see if the Changes that were made have Reduced the Number of Findings
 
 1. Go to AWS inspector and run the inspector scan that was run in Exercise 2.
@@ -396,11 +396,11 @@ Capture the screenshot of the secret recipes bucket showing that default encrypt
 
 **Deliverables**:
 - **E4T3_securityhub.png** - Screenshot of Security Hub after reevaluating the number of findings.
-[Security Hub](Excercise4/E4T3_securityhub.png)
+[Security Hub](Exercise4/E4T3_securityhub.png)
 - **E4T3_config.png** - Screenshot of Config after reevaluating the number of findings.
-[Config](Excercise4/E4T3_config.png)
+[Config](Exercise4/E4T3_config.png)
 - **E4T3_inspector.png** - Screenshot of Inspector after reevaluating the number of findings.
-[Inspector](Excercise4/E4T3_inspector.png)
+[Inspector](Exercise4/E4T3_inspector.png)
 
 ### Task 4: Questions and Analysis
 
@@ -413,7 +413,7 @@ Submit your answers in E4T4.txt.
 
 **Deliverables**:
 - **E4T4.txt** - Answers from prompts in Exercise 4, Task 4.
-[Answers](Excercise4/E4T1.txt)
+[Answers](Exercise4/E4T1.txt)
 ###  _Optional Standout Suggestion_ Task 5 - Additional Hardening
 
 Make changes to the environment by updating the cloud formation template. You would do this by copying c3-app.yml and c3-s3.yml and putting your new code into c3-app_solution.yml and c3-s3_solution.yml.
@@ -457,7 +457,7 @@ Submit your design as a ppt or png image named DevSecOpsPipeline.[ppt or png].
 
 **Deliverables**:
 - **DevSecOpsPipline.[ppt or png]** - Your updated pipeline.
-[Updated Pipleline](Excercise5/DevSecOpsPipeline.png)
+[Updated Pipleline](Exercise5/DevSecOpsPipeline.png)
 ### Task 2 - Tools and Documentation
       
 You will need to determine appropriate tools to incorporate into the pipeline to ensure that security vulnerabilities are found.
@@ -472,7 +472,7 @@ Submit your answers in E5T2.txt
 
 **Deliverables**:
 - **E5T2.txt** - Answer from prompts in Exercise 5, Task 2.
-[Answers](Excercise5/E5T2.txt)
+[Answers](Exercise5/E5T2.txt)
 ### _Optional Standout Suggestion_ Task 3 - Scanning Infrastructure Code
 
 - Run an infrastructure as code scanning tool on the cloud formation templates provided in the starter.
